@@ -1,8 +1,7 @@
 import express from 'express'
-import dotenv from 'dotenv'
-dotenv.config()
+import config from './config.js'
 
-const port = process.env.PORT || 8080
+const port = config.port || 8080
 
 const app = express()
 
